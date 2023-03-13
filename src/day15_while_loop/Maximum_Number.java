@@ -18,6 +18,8 @@ public class Maximum_Number {
             }
         }
         System.out.println("Maximum number is: " + max);
+
+        input.close();
         
         
     }
