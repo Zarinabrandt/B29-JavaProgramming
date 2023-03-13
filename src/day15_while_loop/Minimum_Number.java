@@ -7,7 +7,7 @@ public class Minimum_Number {
 
         Scanner input = new Scanner(System.in);
 
-        int min = 2147483647;
+        int min = 2147483647; //Any integer number that user enters will ALWAYS be less than 2147483647
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter a number");

@@ -7,7 +7,7 @@ public class Maximum_Number {
 
         Scanner input = new Scanner(System.in);
 
-        int max = -2147483648; //smallest number
+        int max = -2147483648; ////Any integer number that user enter will ALWAYS be greater than -2147483648
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter a number");
