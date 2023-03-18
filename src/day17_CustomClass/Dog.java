@@ -5,6 +5,7 @@ public class Dog {
     public String name; //instance variable
     public String breed;
     public String size;
+    public char gender;
     public int age;
     public String color;
 
