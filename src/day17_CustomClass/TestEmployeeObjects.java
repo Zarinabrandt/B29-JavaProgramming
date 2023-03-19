@@ -16,6 +16,10 @@ public class TestEmployeeObjects {
         Employee employee4 = new Employee();
         employee4.setInfo("Natalie", 37,'F',"HR", 45000,"A78");
 
+        employee1.age = 39; // in case need to change any of arguments of specific employee
+        employee3.name = "Momad";
+        employee3.gender = 'F'; // the value will be the one was changed last time. The way is class dissing is not immutble
+
 
         System.out.println(employee1);
         System.out.println(employee2);
