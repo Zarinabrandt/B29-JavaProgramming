@@ -9,6 +9,8 @@ public class Dog {
     public int age;
     public String color;
 
+
+    //method for all set of 6 arguments ↓
     public void setInfo(String name,String breed,String size,char gender,int age,String color){ // this keyword is used for calling the instance variable name
         this.name = name;
         this.breed = breed;
@@ -17,6 +19,7 @@ public class Dog {
         this.age = age;
         this.color = color;
     } // this method can help us to set all the information of the dog at once
+
 
 
     public void eat(){
