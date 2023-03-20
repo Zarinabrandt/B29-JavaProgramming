@@ -2,10 +2,11 @@ package day18_GarbageCollection;
 
 public class Pizza {
 
-    public char size;
+    public char size; //instance variable, means can be multiple copy of this variable
     public int numberOfCheeseTopping,
             numberOfPepperoniTopping;
 
+    //calculates the total price of the pizza, returns it as double
     public double calcCost() {
         double totalPrice = 0;
 
