@@ -22,16 +22,29 @@ public class BankAccount {
     }
 
     public void checkBalance(){
-        System.out.println("Your available balance is: "+ balance);
+        System.out.println("Your available balance is: $"+ balance);
     }
 
 
     public void deposit(double amount){
+
+        if (amount < 1){
+            System.out.println("Insufficient amount: "+amount);
+            return;
+        }
+        System.out.println("Depositing $"+ amount+ " to "+accountHolder);
         balance += amount;
     }
 
 
     public void withdraw(double amount){
+
+        if (amount > balance ){
+            System.out.println("Insufficient withdraw amount: "+amount);
+            return;
+        }
+
+        System.out.println("Withdrawing $"+amount+ " from "+accountHolder);
         balance -= amount;
     }
 
