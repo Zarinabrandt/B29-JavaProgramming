@@ -20,7 +20,7 @@ public class Arithmetic_operators {
         System.out.println( 100 % 10); // remainder is 0
         System.out.println( 45 % 8); // remainder will be 5
 
-
+        System.out.println("---------------------------------------------");
 
 
     }
