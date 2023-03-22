@@ -28,6 +28,21 @@ public class ArrayPractice1 {
             System.out.println(myGroup[i]);
         }
 
+        System.out.println("----------------------------------------");
+
+        // shortcut for iterate the array is myGroup.fori // prints from beginning to the end
+        for (int i = 0; i < myGroup.length; i++) {
+            System.out.println(myGroup[i]);
+        }
+
+        // iterate to reverse order shortcut will be myGroup.forr
+        for (int i = myGroup.length - 1; i >= 0; i--) {
+            System.out.println(myGroup[i]);
+        }
+
+
+        
+
 
     }
 }
