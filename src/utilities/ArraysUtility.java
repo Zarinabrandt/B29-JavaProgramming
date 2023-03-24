@@ -57,7 +57,7 @@ public class ArraysUtility {
     }
 
 
-    public static String[] merge(String[] arr1, String[] arr2){
+    public static String[] merge(String[] arr1, String[] arr2) {
 
         String[] arr3 = new String[arr1.length + arr2.length]; //to make sure that 3rd array has enough capacity to contain all the elements of arr1 and arr2
 
@@ -70,9 +70,7 @@ public class ArraysUtility {
         for (int i = 0; i < arr2.length; i++, k++) { //i: for second array's index numbers
             arr3[k] = arr2[i];
         }
-        return  arr3;
-
+        return arr3;
     }
-
 
 }
