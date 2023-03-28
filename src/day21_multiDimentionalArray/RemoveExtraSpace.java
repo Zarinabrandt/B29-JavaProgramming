@@ -23,7 +23,7 @@ public class RemoveExtraSpace {
             }
         }
 
-        str = str.trim();
+        str = str.trim(); //for the last space
         System.out.println(str);
 
 
