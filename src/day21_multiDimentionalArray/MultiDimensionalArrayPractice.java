@@ -43,7 +43,13 @@ public class MultiDimensionalArrayPractice {
             }
         }
 
+        System.out.println("-----------------------------------------------------------");
 
+        System.out.println(groups); //hashcode
+
+        System.out.println(Arrays.toString(groups)); //hashcode toString ==> for single dimensional arrays only
+
+        System.out.println(Arrays.deepToString(groups) );//deepToString ==> for multi-dimensional arrays only
 
 
 
