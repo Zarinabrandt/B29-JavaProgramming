@@ -7,13 +7,13 @@ public class RemoveExtraSpace {
 
         String str = "  Hello world      I      love      Java    ";
 
-        //str = str.trim(); // it trims at beginning and at the end
+        //str = str.trim(); // it trims at beginning and at the end //unnecessary
 
-        //System.out.println(str);
+        //System.out.println(str); //unnecessary
 
         String[] words = str.split(" ");
 
-        System.out.println(Arrays.toString(words));
+        //System.out.println(Arrays.toString(words)); //unnecessary
 
         str = "";
 
