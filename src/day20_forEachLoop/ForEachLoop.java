@@ -1,4 +1,4 @@
-package day21_forEachLoop;
+package day20_forEachLoop;
 
 public class ForEachLoop {
     public static void main(String[] args) {

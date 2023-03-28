@@ -1,4 +1,4 @@
-package day21_forEachLoop;
+package day20_forEachLoop;
 
 import java.util.Arrays;
 import utilities.ArraysUtility;
