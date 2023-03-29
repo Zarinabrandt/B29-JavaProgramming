@@ -16,6 +16,8 @@ public class SingleDimensionalArray_vs_TwoDimensionalArray {
         int[] arr4 = {11,12,13,14,15};
         int[] arr5 = {16,17,18,19,20,21};
 
+        int[] arr6 = {30, 40, 50, 60, 70, 80, 90};
+
 
         int[][] arr2D = new int[5][]; // index: 0~4
 
@@ -25,6 +27,7 @@ public class SingleDimensionalArray_vs_TwoDimensionalArray {
         arr2D[3] = arr4;
         arr2D[4] = arr5;
 
+        // arr2D[5] = arr6;
 
         System.out.println(Arrays.deepToString(arr2D));
 
