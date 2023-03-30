@@ -1,6 +1,4 @@
-package day21_multiDimentionalArray;
-
-import java.util.Arrays;
+package day21_multiDimensionalArray;
 
 public class RemoveExtraSpace {
     public static void main(String[] args) {

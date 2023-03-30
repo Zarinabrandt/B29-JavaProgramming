@@ -1,4 +1,4 @@
-package day21_multiDimentionalArray;
+package day21_multiDimensionalArray;
 
 import utilities.ArraysUtility;
 

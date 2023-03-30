@@ -2,7 +2,7 @@ Java Programming Day21
 
 Topics: Muti-dimensional Array
 
-package name: day21_multiDimentionalArray
+package name: day21_multiDimensionalArray
 
 Warmup tasks:
 	1. Write a program that can remove all the extra space from string
