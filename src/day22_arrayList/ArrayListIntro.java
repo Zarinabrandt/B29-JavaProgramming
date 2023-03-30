@@ -1,6 +1,7 @@
 package day22_arrayList;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class ArrayListIntro {
     public static void main(String[] args) {
@@ -16,6 +17,14 @@ public class ArrayListIntro {
         //array[5] = 60; // indexOutOfBoneException
 
         System.out.println(Arrays.toString(array));
+
+        System.out.println("----------------------------------------------------");
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        System.out.println(list);
+        System.out.println(list.size());
+
 
 
 
