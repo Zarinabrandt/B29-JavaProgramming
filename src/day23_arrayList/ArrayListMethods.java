@@ -96,6 +96,13 @@ public class ArrayListMethods {
         System.out.println(  names.lastIndexOf("Arina")  ); //5
 
 
+        boolean hasMuhtar = names.contains("Muhtar"); //false
+        boolean hasArina = names.contains("Arina"); //true
+
+        System.out.println("hasMuhtar = " + hasMuhtar);
+        System.out.println("hasArina = " + hasArina);
+
+
 
 
 
