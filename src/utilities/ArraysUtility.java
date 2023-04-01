@@ -206,19 +206,41 @@ public class ArraysUtility {
         return false;
     }
 
-/*
+
     // array = {10,20,30,40} , 2 ===> {10,20,40}
     public static int[] remove(int[] array, int index){
 
+        boolean isValidIndex = index >= 0 && index < array.length;
+
+        if (isValidIndex){
+            for (int i = index; i < array.length - 1; i++) {
+                array[i] = array[i + 1];
+            }
+            array = Arrays.copyOf(array, array.length - 1);
+        }
+        return array;
     }
 
 
     public static int[] removeDup(int[] array){
 
+        String a= "";
+        for (int i = 0; i < array.length; i++) {
+            if(!a.contains(array[i]+"")){
+                a+=array[i]+ " ";
+            }
+        }
+        int[] res = new int[a.length()/2];
+        String[] b = a.split(" ");
+        for (int i = 0; i < res.length; i++) {
+            res[i] = Integer.valueOf(b[i]);
+        }
+        return res;
+
     }
 
 
- */
+
 
 
 
