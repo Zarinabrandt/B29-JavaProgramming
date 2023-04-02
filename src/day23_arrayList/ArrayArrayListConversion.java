@@ -1,5 +1,6 @@
 package day23_arrayList;
 
+import javax.xml.stream.events.Characters;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -34,7 +35,40 @@ public class ArrayArrayListConversion {
 
         System.out.println(Arrays.toString(n));
 
+        System.out.println("-----------------------------------------------------------");
 
+        //quiz
+        ArrayList<Integer> list3 = new ArrayList<>();
+        list3.add(1);
+        list3.add(2);
+        list3.add(3);
+
+        //int a = 1;
+        Integer a = 1;
+        list3.remove(a);
+
+        System.out.println(list3);
+
+        System.out.println("-----------------------------------------------------------");
+
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("green");
+        colors.add("red");
+        colors.add("blue");
+        colors.add("yellow");
+        colors.add(3, "cyan");
+
+        System.out.println(colors);
+
+        System.out.println("-----------------------------------------------------------");
+
+        ArrayList<Integer> list5 = new ArrayList<>();
+        list5.set(0, list5.get(4));
+        list5.set(4, list5.get(0));
+
+        System.out.println(list5); //indexOutOfBound
+
+        System.out.println("-----------------------------------------------------------");
 
 
 
