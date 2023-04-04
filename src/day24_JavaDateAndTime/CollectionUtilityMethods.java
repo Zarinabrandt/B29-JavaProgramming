@@ -1,4 +1,4 @@
-package utilities;
+package day24_JavaDateAndTime;
 
 import java.util.ArrayList;
 import java.util.Arrays;
