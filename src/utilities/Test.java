@@ -1,4 +1,4 @@
-package day27_AccessModifiers;
+package utilities;
 
 import day27_AccessModifiers.Data;
 
