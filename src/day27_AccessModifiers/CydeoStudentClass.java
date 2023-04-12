@@ -6,7 +6,7 @@ public class CydeoStudentClass {
     public int age;
     public char gender;
 
-    public static String schoolName = "Cydeo";
+    public static String schoolName;
     public static String secretCode;
 
     public CydeoStudentClass(String name, int age, char gender) {
@@ -18,7 +18,7 @@ public class CydeoStudentClass {
     }
 
     static {
-       // schoolName = "Cydeo School";
+        schoolName = "Cydeo School";
         secretCode = "Wooden Spoon";
     }
 
