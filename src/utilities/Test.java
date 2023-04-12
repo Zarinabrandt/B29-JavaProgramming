@@ -1,5 +1,6 @@
 package utilities;
 
+import day27_AccessModifiers.AccessModifiers;
 import day27_AccessModifiers.Data;
 
 public class Test {
@@ -20,6 +21,10 @@ public class Test {
 
         obj.method1();
         obj.method2();
+
+        System.out.println("---------------------------------------------------");
+
+        System.out.println(AccessModifiers.publicDate);
 
 
     }
