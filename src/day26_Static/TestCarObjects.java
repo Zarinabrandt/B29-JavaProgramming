@@ -1,6 +1,5 @@
-package day26_Static.StudentTask;
+package day26_Static;
 
-import day26_statics.Car;
 
 public class TestCarObjects {
     public static void main(String[] args) {
