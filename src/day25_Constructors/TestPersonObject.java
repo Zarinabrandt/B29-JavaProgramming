@@ -1,8 +1,10 @@
 package day25_Constructors;
 
+import java.lang.reflect.Constructor;
 import java.time.LocalDate;
 
 public class TestPersonObject {
+    /*
     public static void main(String[] args) {
 
         Person p1 = new Person("Alina",25,'F', LocalDate.of(1998,05,5), true, true);
@@ -14,4 +16,8 @@ public class TestPersonObject {
 
 
     }
+
+     */
+
+
 }
