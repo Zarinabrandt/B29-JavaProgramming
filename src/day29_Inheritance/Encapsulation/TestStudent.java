@@ -1,4 +1,4 @@
-package Inheritance.Encapsulation;
+package day29_Inheritance.Encapsulation;
 
 public class TestStudent {
     public static void main(String[] args) {
