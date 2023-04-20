@@ -76,7 +76,7 @@ public class Animal {
 
 
     public void sleep(){
-        System.out.println(name+" is sleeping");
+        System.out.println(name+" is sleeps 8 hours");
     }
 
 
