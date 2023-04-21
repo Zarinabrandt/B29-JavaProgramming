@@ -31,4 +31,14 @@ public class Circle extends Shape{
         super.draw();
         // code fragments that can draw a circle
     }
+
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "name='" + getName() + '\'' +
+                "radius=" + radius +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
+
 }
