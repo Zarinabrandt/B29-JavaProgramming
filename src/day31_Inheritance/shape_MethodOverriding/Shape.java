@@ -5,7 +5,7 @@ public class Shape {
     private String name;
 
 
-    public Shape(String name) {
+    public Shape() {
         setName(getClass().getSimpleName());
     }
 
