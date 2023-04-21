@@ -36,8 +36,8 @@ public class Shape {
     public String toString() {
         return getClass().getSimpleName()+"{" +
                 "name='" + name + '\'' +
-                "area='" + area() + '\'' +
-                "perimeter='" + perimeter() + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
                 '}';
     }
 
