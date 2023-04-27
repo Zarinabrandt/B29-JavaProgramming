@@ -10,7 +10,7 @@ public class Car {
     public static boolean hasBattery;
 
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car(String model, String color, int year, double price) {
         setMake(getClass().getSimpleName()); // setting the class name to the make of the car
         setModel(model);
         setColor(color);

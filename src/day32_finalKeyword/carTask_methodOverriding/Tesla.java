@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Tesla extends Car{
 
-    public Tesla(String make, String model, String color, int year, double price) {
-        super(make, model, color, year, price);
+    public Tesla(String model, String color, int year, double price) {
+        super(model, color, year, price);
     }
 
     public void autoPilot(){
@@ -37,7 +37,7 @@ public class Tesla extends Car{
        colors.addAll(Arrays.asList("White", "Red", "Black", "Silver", "Blue", "Brown", "Green"));
 
        if (!colors.contains(color)){
-           System.err.println("Invalid color "+color);
+           System.err.println("Invalid color of Tesla car "+color);
            System.exit(1);
        }
         super.setColor(color); //this.color = color;
@@ -46,7 +46,7 @@ public class Tesla extends Car{
     @Override
     public void setYear(int year) {
         if (year < 2008){
-            System.err.println("Invalid year "+year);
+            System.err.println("Invalid year of Tesla car "+year);
             System.exit(1);
         }
         super.setYear(year);
@@ -55,7 +55,7 @@ public class Tesla extends Car{
     @Override
     public void setPrice(double price) {
         if (price < 50000){
-            System.err.println("Invalid price "+price);
+            System.err.println("Invalid price of Tesla car "+price);
             System.exit(1);
         }
         super.setPrice(price);

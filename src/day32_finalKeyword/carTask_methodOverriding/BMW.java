@@ -2,8 +2,8 @@ package day32_finalKeyword.carTask_methodOverriding;
 
 public class BMW extends Car{
 
-    public BMW(String make, String model, String color, int year, double price) {
-        super(make, model, color, year, price);
+    public BMW(String model, String color, int year, double price) {
+        super(model, color, year, price);
     }
 
     @Override
