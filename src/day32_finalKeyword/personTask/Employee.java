@@ -6,11 +6,10 @@ public class Employee extends Person{
     private String jobTitle;
     private double salary;
 
-
-    public Employee(String name, char gender, int age, LocalDate dateOfBirth, String jobTitle, double salary) {
-        super(name, gender, age, dateOfBirth);
-        this.jobTitle = jobTitle;
-        this.salary = salary;
+    public Employee(String name, char gender, LocalDate dateOfBirth, String jobTitle, double salary) {
+        super(name, gender, dateOfBirth);
+        setJobTitle(jobTitle);
+        setSalary(salary);
     }
 
     public String getJobTitle() {
@@ -29,11 +28,9 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
-
     public void work(){
-        System.out.println(getName()+" is working");
+        System.out.println(getName() +" is working");
     }
-
 
 
     @Override
@@ -42,7 +39,7 @@ public class Employee extends Person{
                 "name='" + getName() + '\'' +
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
-                ", dateOfBirth=" + getDateOfBirth() +
+                ", dateOfBirth=" +getDateOfBirth() +
                 "jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
                 '}';
