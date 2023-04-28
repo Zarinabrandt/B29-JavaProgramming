@@ -10,28 +10,22 @@ public class Person {
     private final LocalDate dateOfBirth;
 
 
-
     public static final int numberOfHead;
 
-    static {
+    static{
         numberOfHead = 1;
     }
 
-    public Person(String name, char gender, int age, LocalDate dateOfBirth) {
+    public Person(String name, char gender, LocalDate dateOfBirth) {
         setName(name);
-        if((gender =='M' || gender == 'F')){
+        if( !(gender=='M' || gender == 'F')){
             System.err.println("Invalid gender: "+gender);
             System.exit(1);
         }
         this.gender = gender;
-
-        if (age <= 0){
-            System.err.println("Invalid age: "+age);
-            System.exit(1);
-        }
-        this.age = age;
-
         this.dateOfBirth = dateOfBirth;
+        this.age = LocalDate.now().getYear() - dateOfBirth.getYear();
+
     }
 
     public String getName() {
@@ -55,7 +49,6 @@ public class Person {
     }
 
 
-
     public void eat(){
         System.out.println(name+" is eating");
     }
@@ -68,11 +61,10 @@ public class Person {
         System.out.println(name+" is sleeping");
     }
 
-    public final void breath(){
-        System.out.println(name+" is breathing");
+    public final void breath(){ // To make sure that this implementation will not change for any sub class
+        System.out.println(name +" is breathing");
     }
 
-    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
