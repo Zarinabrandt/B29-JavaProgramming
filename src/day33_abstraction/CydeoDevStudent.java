@@ -51,6 +51,10 @@ public class CydeoDevStudent extends Person {
     }
 
     public void setBatchNumber(int batchNumber) {
+        if (batchNumber <= 0){
+            System.err.println("Invalid batch number: "+batchNumber+ "\nBatch number can not be negative or zero");
+            System.exit(1);
+        }
         this.batchNumber = batchNumber;
     }
 }
