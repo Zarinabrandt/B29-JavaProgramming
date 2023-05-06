@@ -4,7 +4,7 @@ import day32_finalKeyword.personTask.Person;
 
 import java.time.LocalDate;
 
-public class CydeoDevStudent extends Person {
+public final class CydeoDevStudent extends Person {
 
     private final String id;
     private String batchName;
@@ -56,6 +56,36 @@ public class CydeoDevStudent extends Person {
             System.exit(1);
         }
         this.batchNumber = batchNumber;
+    }
+
+
+    @Override
+    public void eat() {
+        System.out.println(getName()+" is eating "+programmingLanguage);
+    }
+
+    @Override
+    public void drink() {
+        System.out.println(getName()+" is drinking "+programmingLanguage);
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName()+" does not need to sleep");
+    }
+
+
+    @Override
+    public String toString() {
+        return "CydeoDevStudent{" +
+                "name='" + getName() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", dateOfBirth=" + getDateOfBirth() +
+                "id='" + id + '\'' +
+                ", batchName='" + batchName + '\'' +
+                ", batchNumber=" + batchNumber +
+                '}';
     }
 }
 /*
