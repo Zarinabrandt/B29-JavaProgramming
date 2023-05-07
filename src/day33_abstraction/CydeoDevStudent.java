@@ -42,10 +42,10 @@ public final class CydeoDevStudent extends Person {
 
 
     public void setBatchName(String batchName) {
-        if (batchName.equalsIgnoreCase("zero to hero") || batchName.equalsIgnoreCase("alumni developer")){
+        if (batchName.equalsIgnoreCase("zero to hero") || batchName.equalsIgnoreCase("alumni dev")){
             this.batchName = batchName;
         }else{
-            System.err.println("Invalid batch name: "+batchName+ "\n No such a batch in Cydeo");
+            System.err.println("Invalid batch name: "+batchName+ "\nNo such a batch at Cydeo");
             System.exit(1);
         }
     }
