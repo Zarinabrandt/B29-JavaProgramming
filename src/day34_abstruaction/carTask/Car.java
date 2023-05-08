@@ -7,12 +7,12 @@ public abstract class Car { // meant to be inherited, can not be instantiated
     private final int year;
     private double price;
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car(String model, String color, int year, double price) {
         this.make = getClass().getSimpleName(); // to set the class name to the make of the car
         this.model = model;
         setColor(color);
-        if (year < 1886){
-            System.err.println("Invalid year: "+year);
+        if (year < 1886) {
+            System.err.println("Invalid year: " + year);
             System.exit(1);
         }
         this.year = year;
