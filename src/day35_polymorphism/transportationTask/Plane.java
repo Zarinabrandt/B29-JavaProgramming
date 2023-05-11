@@ -1,6 +1,8 @@
 package day35_polymorphism.transportationTask;
 
-public abstract class Plane extends Transportation{
+import day34_abstruaction.animalTask.Flyable;
+
+public abstract class Plane extends Transportation implements Flyable {
 
     public Plane(String make, String model, String color, int year, double price) {
         super(make, model, color, year, price);
@@ -10,4 +12,8 @@ public abstract class Plane extends Transportation{
         System.out.println("Plane "+getMake()+" "+getModel()+" is landing");
     }
 
+    @Override
+    public void fly() {
+        System.out.println(getMake()+getModel()+" is flying");
+    }
 }
