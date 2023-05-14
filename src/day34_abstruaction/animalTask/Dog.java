@@ -8,11 +8,17 @@ public class Dog extends Animal implements Playable{
 
     @Override
     public void eat() {
-        System.out.println("Dog "+ getName()+" is eating dog food");
+        System.out.println("Dog "+ getName() +" is eating dog food");
     }
+
 
     @Override
     public void play() {
-        System.out.println("Dog "+ getName()+" is playing");
+
     }
+
+    public void bark(){
+        System.out.println(getName() +" is barking");
+    }
+
 }
