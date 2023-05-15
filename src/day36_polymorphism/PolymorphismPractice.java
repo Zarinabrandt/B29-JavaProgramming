@@ -6,6 +6,12 @@ import day30_inheritance.phoneTask.Phone;
 import day30_inheritance.phoneTask.Samsung;
 
 public class PolymorphismPractice {
+
+
+    
+
+
+
     public static void main(String[] args) {
 
         //   IPhone phone = new Phone("Iphone 11 Pro", "Large", "Black", 900);
@@ -66,6 +72,8 @@ public class PolymorphismPractice {
                 }
             }
         }
+
+        // ==, .equals()
 
 
     }
