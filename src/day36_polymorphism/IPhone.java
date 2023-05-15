@@ -84,7 +84,16 @@ public class IPhone {
                 '}';
     }
 
-    public void selfDefence() {
-    }
+    @Override
+    public boolean equals(Object obj) {
 
+        if (obj instanceof IPhone){ //if the given object is IPhone
+            if (model.equals(((IPhone) obj).model)){ // if the model of the IPhone is equal to the given IPhone's model
+                if (color.equals(((IPhone)obj).color)){ //if the color of the IPhone is equal to the given IPhone's color
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
