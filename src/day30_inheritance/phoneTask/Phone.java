@@ -84,6 +84,8 @@ public class Phone {
                 '}';
     }
 
+    public void selfDefence() {
+    }
 }
 /*
 1. Create a named Phone:
