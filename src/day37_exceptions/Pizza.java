@@ -68,6 +68,7 @@ public class Pizza {
                 "size=" + size +
                 ", numberOfCheeseTopping=" + numberOfCheeseTopping +
                 ", numberOfPepperoniTopping=" + numberOfPepperoniTopping +
+                ", total price=" + calcCost() +
                 '}';
     }
 
@@ -79,13 +80,18 @@ public class Pizza {
             System.exit(1);
         }
 
-        if (size == ((Pizza) obj).size){
-           if (numberOfPepperoniTopping == ((Pizza) obj).numberOfPepperoniTopping){
+        Pizza pizza = (Pizza) obj;
+
+        if (size == pizza.getSize()){
+           if (numberOfPepperoniTopping == pizza.getNumberOfPepperoniTopping()){
                return true;
            }
         }
         return false;
     }
+
+
+
 }
 /*
 1. Create a class named Pizza
