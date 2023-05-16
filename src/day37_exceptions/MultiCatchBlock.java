@@ -30,6 +30,20 @@ public class MultiCatchBlock {
 
         System.out.println("program1 ended");
 
+        /*       // Multiple try blocks are NOT allowed
+        try{
+
+        }catch (RuntimeException e){
+
+        }try{
+
+        }try{
+
+        }try{
+
+        }
+         */
+
 
     }
 }
