@@ -1,9 +1,16 @@
 package day38_exceptions;
 
-public class ThrowsKeyword2 {
-    public static void main(String[] args) throws InterruptedException {
+import day32_finalKeyword.FinalKeyword;
+import utilities.Library;
 
-       method1();
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ThrowsKeyword2 {
+    public static void main(String[] args){
+
+       //method1();
+        Library.sleep(3.5);
 
 
     }
@@ -19,6 +26,21 @@ public class ThrowsKeyword2 {
         System.out.println("Hello World");
         pauseFor5Seconds();
         System.out.println("Hello Cydeo");
+    }
+
+
+    public static void method2() throws InterruptedException, FileNotFoundException {
+
+        System.out.println("First program started");
+
+        Thread.sleep(3000);
+
+        System.out.println("First program ended");
+
+        new FileInputStream(" ");
+
+        Thread.sleep(5000);
+
     }
 
 
