@@ -48,7 +48,7 @@ public class ThrowKeyword {
         //throw exception;
         //throw new RuntimeException();
 
-        throw new Person("Jimmy",45,'M'); // doesn't have "IS A" relationship with throwable
+        //throw new Person("Jimmy",45,'M'); // doesn't have "IS A" relationship with throwable
 
 
 
