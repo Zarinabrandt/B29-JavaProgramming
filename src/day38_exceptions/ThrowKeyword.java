@@ -34,6 +34,22 @@ public class ThrowKeyword {
         //throw new RuntimeException("Runtime exception");
         //System.out.println("Hello World");
 
+        try {
+            throw new FileNotFoundException("");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("-----------------------------------------------------------");
+
+
+        RuntimeException exception = new RuntimeException();
+
+        //throw exception;
+        //throw new RuntimeException();
+
+        throw new Person("Jimmy",45,'M'); // doesn't have "IS A" relationship with throwable
+
 
 
 
