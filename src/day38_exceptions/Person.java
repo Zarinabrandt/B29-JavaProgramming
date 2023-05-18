@@ -42,4 +42,13 @@ public class Person {
     public char getGender() {
         return gender;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
 }

@@ -34,7 +34,7 @@ public class ThrowKeyword {
         //throw new RuntimeException("Runtime exception");
         //System.out.println("Hello World");
 
-        throw new FileNotFoundException("");
+
 
 
 
