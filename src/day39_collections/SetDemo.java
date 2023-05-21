@@ -5,7 +5,7 @@ import java.util.*;
 public class SetDemo {
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>(); // accepts duplicates, keeps insertion order, has index
         list.addAll(Arrays.asList(10,200,300,40,90));
         list.addAll(Arrays.asList(10,200,300,40,90));
         list.addAll(Arrays.asList(10,200,300,40,90));
@@ -15,7 +15,7 @@ public class SetDemo {
 
         System.out.println("-----------------------------------------------------------------");
 
-        Set<Integer> set1 = new HashSet<>(); // order is random
+        Set<Integer> set1 = new HashSet<>(); // order is random, accepts null key
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
@@ -26,7 +26,7 @@ public class SetDemo {
 
         System.out.println("-----------------------------------------------------------------");
 
-        Set<Integer> set2 = new LinkedHashSet<>();
+        Set<Integer> set2 = new LinkedHashSet<>(); // Keeps inserting order, accepts null key
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
@@ -40,7 +40,7 @@ public class SetDemo {
         String str = null;
         //System.out.println(str.toLowerCase());
 
-        Set<Integer> set3 = new TreeSet<>();
+        Set<Integer> set3 = new TreeSet<>(); // Keeps sorted order, does not accept duplicates
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
@@ -68,7 +68,7 @@ public class SetDemo {
 
         System.out.println(new ArrayList<>(result).get(1) );
 
-        words = result.toArray(new String[0]);
+        words = result.toArray(new String[0]); // converting Set to Array
 
         System.out.println("Words Array : "+ Arrays.toString(words));
 
@@ -77,7 +77,7 @@ public class SetDemo {
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50,5, 5, 5, 1, 1, 1, 2, 2,2));
 
-        Set<Integer> n = new TreeSet<>(numbers);
+        Set<Integer> n = new TreeSet<>(numbers); // List to Set
 
         System.out.println(n);
 
