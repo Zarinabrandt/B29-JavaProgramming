@@ -1,6 +1,6 @@
 package utilities;
 
-public class String_Utility {
+public class StringUtility {
 
     public static String reverse(String str){
 
